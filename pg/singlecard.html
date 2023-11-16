@@ -1,0 +1,234 @@
+<style>
+:root{
+    --gold: #ddc471;
+    --green-dark: #079307;
+    --green-light: #4cae4c;
+    --green-lighter: #5cb85c;
+    --purple-light: #7165ff;
+    --light-black: #333;
+    --red-brown: #d9534f;
+    --redbrowndarkt: #d43f3a;
+    --golden-gradient: #fff linear-gradient(90deg, rgba(255, 204, 0, 0.35) 58%, rgba(255, 205, 0, 0.5) 100%);
+    --green-gradient:  #e2fce2 linear-gradient(90deg, rgba(81, 184, 124, 0.35) 58%, rgba(51, 176, 105, 0.5) 100%);
+    --brown-gradient:  #f9f6f6 linear-gradient(90deg, rgba(237, 157, 53, 0.35) 58%, rgba(233, 156, 56, 0.5) 100%);
+} 
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: #f9f9f9;
+    color: #333;
+}
+
+div.outer{
+    margin-top: 100px;
+}
+    .active{
+        background: var(--golden-gradient);
+    }
+    .selected{
+        background: var(--green-gradient);
+    }
+    .third{
+        background: var(--brown-gradient);
+    }
+    .staffs-card{
+        justify-content: space-around;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: -1px -1px 19px rgb(170, 168, 168);
+        border-radius: 1px;
+    }
+    .staffs-card p{
+        font-size: 17px;
+        margin: 0 auto 45px auto;
+    }
+    .staffs-card .avatar,
+    .staffs-card .staff-column {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .staffs-card .staff-column img{
+        display: table;
+        position: relative;
+        margin-left: 25%;
+    }
+    h2.staff-name, div.minor-staff{
+        text-align: center;
+    }
+    span.line{
+        padding: 2px;
+        border-bottom: 1px solid var(--purple-light);
+    }
+    .scroll-indicator{
+        font-size: 12px;
+        margin: 10px;
+        color: var(--green-dark);
+        padding: 10px;
+    }
+    .staffs-card button{
+        padding: 10px 16px;
+        background: var(--purple-light);
+        border: none;
+        border-radius: 5px;
+        font-size: 17px;
+        color:#fff;
+    }
+    div.other-staffs{
+        display: flex;
+        overflow: scroll;
+        width: 100%;
+    }
+    div.minor-staff{
+        box-sizing: border-box;
+        box-shadow: -1px 2px 19px rgb(211, 205, 205);
+        margin: 5px;
+        border-radius: 5px;
+        width: 100%;
+        min-width: 170px;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .div.minor-staff img, div.minor-staff h6{
+        padding-top: 5px; 
+        text-transform: uppercase;
+        font-size: 9px;
+    }
+    div.minor-staff span{
+        font-size: 10px;
+    }
+ 
+</style>
+<div class="outer">
+    <div class="staffs-card">
+      <div class="avatar active">
+        <div class="staff-column">
+            <img src="/img/peter.png" alt="avatar-peter" width="150">
+            <span class="line"></span> 
+            <h2 class="staff-name">Prof AHMAD SONHALLA</h2>
+            <span class="staffititle"> HOD Anatomy</span>
+        </div>
+        <div class="staff-column">
+            <p class="description">I'm Peter. I'm a design allrounder with no particular style preferences. If you want
+                to get logo design suggestions in various styles, I'd be happy to provide you with a good design mix.
+            </p>
+           <button class="btn btn-success btn-lg btn-select">Read more</button>
+        </div> 
+      </div>
+      <span class="scroll-indicator"> Scroll left to see more staffs ➡️</span>
+        <div class="other-staffs">
+            <div class="minor-staff">
+                <img src="/img/peter.png" alt="" width="" height="55">
+                <h6> Abdulfatah Moisule Ganga</h6>
+                <span> Deputy HOD </span>
+            </div>
+            <div class="minor-staff">
+                <img src="/img/peter.png" alt="" width="" height="55">
+                <h6> Abdulfatah Moisule Ganga</h6>
+                <span> Deputy HOD </span>
+            </div>
+            <div class="minor-staff">
+                <img src="/img/peter.png" alt="" width="" height="55">
+                <h6> Abdulfatah Moisule Ganga</h6>
+                <span> Deputy HOD </span>
+            </div>
+            <div class="minor-staff">
+                <img src="/img/peter.png" alt="" width="" height="55">
+                <h6> Abdulfatah Moisule Ganga</h6>
+                <span> Deputy HOD </span>
+            </div>
+    </div>
+</div>
+
+
+<div class="outer">
+    <div class="staffs-card">
+      <div class="avatar selected">
+        <div class="staff-column">
+            <img src="/img/peter.png" alt="avatar-peter" width="150">
+            <span class="line"></span> 
+            <h2 class="staff-name">Prof AHMAD SONHALLA</h2>
+        </div>
+        <div class="staff-column">
+            <p class="description">I'm Peter. I'm a design allrounder with no particular style preferences. If you want
+                to get logo design suggestions in various styles, I'd be happy to provide you with a good design mix.
+            </p>
+           <button class="btn btn-success btn-lg btn-select">Read more</button>
+        </div> 
+      </div>
+      <span class="scroll-indicator"> Scroll left to see more staffs ➡️</span>
+        <div class="other-staffs">
+            <div class="minor-staff">
+                <img src="/img/peter.png" alt="" width="" height="55">
+                <h6> Abdulfatah Moisule Ganga</h6>
+                <span> Deputy HOD </span>
+            </div>
+            <div class="minor-staff">
+                <img src="/img/peter.png" alt="" width="" height="55">
+                <h6> Abdulfatah Moisule Ganga</h6>
+                <span> Deputy HOD </span>
+            </div>
+            <div class="minor-staff">
+                <img src="/img/peter.png" alt="" width="" height="55">
+                <h6> Abdulfatah Moisule Ganga</h6>
+                <span> Deputy HOD </span>
+            </div>
+            <div class="minor-staff">
+                <img src="/img/peter.png" alt="" width="" height="55">
+                <h6> Abdulfatah Moisule Ganga</h6>
+                <span> Deputy HOD </span>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="outer">
+    <div class="staffs-card">
+      <div class="avatar third">
+        <div class="staff-column">
+            <img src="/img/peter.png" alt="avatar-peter" width="150">
+            <span class="line"></span> 
+            <h2 class="staff-name">Prof AHMAD SONHALLA</h2>
+        </div>
+        <div class="staff-column">
+            <p class="description">I'm Peter. I'm a design allrounder with no particular style preferences. If you want
+                to get logo design suggestions in various styles, I'd be happy to provide you with a good design mix.
+            </p>
+           <button class="btn btn-success btn-lg btn-select">Read more</button>
+        </div> 
+      </div>
+      <span class="scroll-indicator"> Scroll left to see more staffs ➡️</span>
+        <div class="other-staffs">
+            <div class="minor-staff">
+                <img src="/img/peter.png" alt="" width="" height="55">
+                <h6> Abdulfatah Moisule Ganga</h6>
+                <span> Deputy HOD </span>
+            </div>
+            <div class="minor-staff">
+                <img src="/img/peter.png" alt="" width="" height="55">
+                <h6> Abdulfatah Moisule Ganga</h6>
+                <span> Deputy HOD </span>
+            </div>
+            <div class="minor-staff">
+                <img src="/img/peter.png" alt="" width="" height="55">
+                <h6> Abdulfatah Moisule Ganga</h6>
+                <span> Deputy HOD </span>
+            </div>
+            <div class="minor-staff">
+                <img src="/img/peter.png" alt="" width="" height="55">
+                <h6> Abdulfatah Moisule Ganga</h6>
+                <span> Deputy HOD </span>
+            </div>
+    </div>
+</div>
